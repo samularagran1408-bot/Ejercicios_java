@@ -14,8 +14,8 @@ public class ContraseñaRamdom {
         int longitud = 8; // contraseña de 8 caracteres
         
         for (int i = 0; i < longitud; i++) {
-            int index = random.nextInt(caracteres.length());
-            password.append(caracteres.charAt(index));
+            int index = random.nextInt(caracteres.length());//genera caracteres aleatorios hasta llegar a la longitud(8)
+            password.append(caracteres.charAt(index));//Coloca caracter por caracter en la contraseña
         }
         
         System.out.println("Contraseña generada: " + password);
